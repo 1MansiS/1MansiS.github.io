@@ -30,7 +30,7 @@ github_username:  1MansiS
 # Build settings
 #theme: minima
 theme: minimal-mistakes-jekyll
-skins: air
+skin: air
 plugins:
   - jekyll-feed
 
