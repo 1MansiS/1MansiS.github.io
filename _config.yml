@@ -29,10 +29,11 @@ github_username:  1MansiS
 
 # Build settings
 #theme: minima
-theme: minimal-mistakes-jekyll
+remote-theme: mmistakes/minimal-mistakes
 skin: air
 plugins:
   - jekyll-feed
+ # - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
