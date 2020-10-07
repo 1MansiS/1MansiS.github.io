@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "How to Get Started Using Java Cryptography Securely"
-date:   2017-03-17
-categories: java_crypto
+date:   2017-03-17T20:20:46.000Z
+tags: java_crypto
 ---
 
 Skip to the [tl;dr](#tl;dr)
