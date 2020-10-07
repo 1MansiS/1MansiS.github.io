@@ -111,11 +111,11 @@ Provider: Set SUN provider property [Signature.SHA256withDSA SupportedKeyClasses
 
 # References
 
-* Applied Cryptography - Bruce Schneier: https://www.amazon.com/gp/product/1119096723
-* Code Book - Simon Singh: https://www.amazon.com/Code-Book-Science-Secrecy-Cryptography/dp/0385495323
-* Course Notes of Introduction to Modern Cryptography - Mihir Bellare: cseweb.ucsd.edu/ ~mihir/cse207/classnotes.html
-* Stanford Coursera Course - Cryptography: https://www.coursera.org/learn/crypto
-* CryptoAnalysis Challenges: https://cryptopals.com
-* OWASP-ESAPI : https://www.owasp.org/index.php/ESAPI
-* Java Encoder Project: https://www.owasp.org/index.php/OWASP_Java_Encoder_Project
+1. Applied Cryptography - Bruce Schneier: https://www.amazon.com/gp/product/1119096723
+2. Code Book - Simon Singh: https://www.amazon.com/Code-Book-Science-Secrecy-Cryptography/dp/0385495323
+3. Course Notes of Introduction to Modern Cryptography - Mihir Bellare: cseweb.ucsd.edu/ ~mihir/cse207/classnotes.html
+4. Stanford Coursera Course - Cryptography: https://www.coursera.org/learn/crypto
+5. CryptoAnalysis Challenges: https://cryptopals.com
+6. OWASP-ESAPI : https://www.owasp.org/index.php/ESAPI
+7. Java Encoder Project: https://www.owasp.org/index.php/OWASP_Java_Encoder_Project
 
