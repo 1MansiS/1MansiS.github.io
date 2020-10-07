@@ -28,9 +28,8 @@ twitter_username: 1MansiS
 github_username:  1MansiS
 
 # Build settings
-#theme: minima
-remote-theme: mmistakes/minimal-mistakes
-skin: air
+theme: minima
+skin: solarized
 plugins:
   - jekyll-feed
  # - jekyll-include-cache
