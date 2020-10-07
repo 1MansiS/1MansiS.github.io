@@ -5,7 +5,7 @@ date:   2017-03-17T20:20:46.000Z
 tags: java_crypto
 ---
 
-Skip to the [tl;dr](#tl;dr)
+Skip to the [tl;dr](#tldr)
 
 Cryptography is the backbone of today's information systems. Its applications are all around us: secure email communications, storage of our login credentials, digital cash and mobile payments, to name just a few. Cryptography is one of the most complicated topics in information security, but the good news is we already have well-defined algorithms, implementations and protocols available to us. To ensure the security of a crypto-system while designing it, it’s extremely important to use these pieces with utmost precision.
 
@@ -99,7 +99,8 @@ Provider: Set SUN provider property [Signature.SHA256withDSA SupportedKeyClasses
 .
 ```
 
-# tl;dr
+# tldr
+
 * Cryptography is not the solution to all security problems. 
 * You still need to perform data validation, encoding, authentication, authorizations, etc. to safeguard against various categories of attacks. 
 * Don't write your own security libraries. Use well-vetted security libraries or framework-specific security options.
