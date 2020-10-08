@@ -1,7 +1,7 @@
 ---
 permalink: /SpeakingEngagements
 layout: page
-title: Speaking Engagements
+title: Talks
 ---
 
 # Upcoming

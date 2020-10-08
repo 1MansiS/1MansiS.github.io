@@ -1,7 +1,7 @@
 ---
 permalink: /repos
 layout: page
-title: Github Repositories
+title: Projects
 ---
 
 # Open Source 
