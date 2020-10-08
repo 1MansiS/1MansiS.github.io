@@ -9,7 +9,7 @@ title: Github Repositories
 * [Python Class Viewer](https://github.com/1MansiS/python3-class-viewer)
 
 # Public Speaking, complimenting Code Repositories
-* [Java_Crypto]()
+* [JavaCrypto](https://github.com/1MansiS/JavaCrypto)
 * [StorinSensitiveInformation](https://github.com/1MansiS/StoringSensitiveInformation)
 * [Building Security Analytics Using NXD](https://github.com/1MansiS/BuildingSecurityAnalyticsUsingNXD)
 
