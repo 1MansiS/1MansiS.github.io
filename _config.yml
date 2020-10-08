@@ -18,22 +18,30 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Mansi Sheth - Cryptography et al
+title: Blogs
 email: mansi.sheth@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
- Everything about secure way of using cryptography.
+ Everything about secure ways of using cryptography.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 1MansiS	
 github_username:  1MansiS
+linkedin_username: shethmansi
 
 # Build settings
 theme: minima
 skin: solarized
 plugins:
   - jekyll-feed
- # - jekyll-include-cache
 
+header_pages:
+  - _pages/about.md
+  - _pages/Repos.md
+  - _pages/SpeakingEngagements.md
+  - _pages/Patents.md
+
+include:
+  - _pages
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
