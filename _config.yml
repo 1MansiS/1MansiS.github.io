@@ -30,10 +30,11 @@ linkedin_username: shethmansi
 
 # Build settings
 theme: minima
-minima.skin: solarized-dark
 plugins:
   - jekyll-feed
 
+minima:
+  skin: solarized-dark 
 header_pages:
   - _pages/about.md
   - _pages/Repos.md
