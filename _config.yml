@@ -29,8 +29,8 @@ github_username:  1MansiS
 linkedin_username: shethmansi
 
 # Build settings
-theme: jekyll-theme-minimal
-#theme: minima
+theme: minima
+minima.skin: solarized-dark
 plugins:
   - jekyll-feed
 
