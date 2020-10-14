@@ -5,7 +5,7 @@ date:   2017-03-17T20:20:46.000Z
 tags: java_crypto
 ---
 
-Original post was publish on veracode blog [here](https://www.veracode.com/blog/research/how-get-started-using-java-cryptography-securely)
+Original post was publish on Veracode blog [here](https://www.veracode.com/blog/research/how-get-started-using-java-cryptography-securely)
 
 Skip to the [tl;dr](#tldr)
 

@@ -5,7 +5,7 @@ date:   2017-03-29
 tags: java_crypto
 ---
 
-Original post was published on veracode blog [here](https://www.veracode.com/blog/research/cryptographically-secure-pseudo-random-number-generator-csprng)
+Original post was published on Veracode blog [here](https://www.veracode.com/blog/research/cryptographically-secure-pseudo-random-number-generator-csprng)
 
 Skip to the [tl;dr](#tldr)
 
