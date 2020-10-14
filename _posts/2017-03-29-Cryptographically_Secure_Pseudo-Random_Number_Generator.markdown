@@ -5,6 +5,8 @@ date:   2017-03-29
 tags: java_crypto
 ---
 
+Original post was published on veracode blog [here](https://www.veracode.com/blog/research/cryptographically-secure-pseudo-random-number-generator-csprng)
+
 Skip to the [tl;dr](#tldr)
 
 This is the second entry in a blog series on using Java cryptography securely. The [first entry](https://1mansis.github.io/2017/03/17/How_to_Get_Started_Using_Java_Cryptography_Securely.html) provided an overview and covered some architectural details, using stronger algorithms and some debugging tips . This entry covers Cryptographically Secure Pseudo-Random Number Generators. This blog series should serve as a one-stop resource for anyone who needs to implement a crypto-system in Java. My goal is for it to be a complimentary, security-focused addition to the [JCA Reference Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html). 
@@ -162,7 +164,7 @@ I only wish that Java would have taken some responsibility for security, as [pyt
 
 A recent incident that illustrates how using a weak random number generator could compromise the security of a system is the attack against the Hacker News website. The attack is explained [here](https://blog.cloudflare.com/why-randomness-matters/),with precise technical details described [here](https://news.ycombinator.com/item?id=639976). To summarize; account thefts on this site took place due to the use of a CSPRNG seeded with time in milliseconds, a week entropy source.
 
-This [SecuredAESUsage](https://github.com/1MansiS/java_crypto/blob/master/cipher/SecuredGCMUsage.java) code example shows how to use SecureRandom in the most secure manner for generating an Initialization Vector.
+This [SecureRandomAPI](https://github.com/1MansiS/JavaCrypto/blob/c6b11827bb43bf1815c2b6a89575a49a4412ca66/JavaCryptoModule/SecureJavaCrypto/src/main/java/com/secure/crypto/secure_random/SecureRandomAPI.java) code example shows how to use SecureRandom in the most secure manner for generating an Initialization Vector.
 
 # Note on impacts of virtualization on sources of randomness:
 

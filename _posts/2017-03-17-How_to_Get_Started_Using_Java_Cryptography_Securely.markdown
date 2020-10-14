@@ -5,6 +5,8 @@ date:   2017-03-17T20:20:46.000Z
 tags: java_crypto
 ---
 
+Original post was publish on veracode blog [here](https://www.veracode.com/blog/research/how-get-started-using-java-cryptography-securely)
+
 Skip to the [tl;dr](#tldr)
 
 Cryptography is the backbone of today's information systems. Its applications are all around us: secure email communications, storage of our login credentials, digital cash and mobile payments, to name just a few. Cryptography is one of the most complicated topics in information security, but the good news is we already have well-defined algorithms, implementations and protocols available to us. To ensure the security of a crypto-system while designing it, it’s extremely important to use these pieces with utmost precision.

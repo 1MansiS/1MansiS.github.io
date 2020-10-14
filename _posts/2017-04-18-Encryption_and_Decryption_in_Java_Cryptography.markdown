@@ -4,8 +4,9 @@ title:  "Encryption and Decryption in Java Cryptography"
 date:   2017-04-18
 tags: java_crypto
 ---
+Original post was published on Veracode blog [here](https://www.veracode.com/blog/research/encryption-and-decryption-java-cryptography)
 
-This is the third entry in a blog series on using Java cryptography securely. The first entry provided an overview covering [architectural details, using stronger algorithms, and debugging tips](http://localhost:4000/2017/03/17/How_to_Get_Started_Using_Java_Cryptography_Securely.html). The second one covered [Cryptographically Secure Pseudo-Random Number Generators](https://www.veracode.com/node/24711). This entry will teach you how to securely configure basic encryption/decryption primitives. This blog series should serve as a one-stop resource for anyone who needs to implement a crypto-system in Java. My goal is for it to be a complimentary, security-focused addition to the [JCA Reference Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html). 
+This is the third entry in a blog series on using Java cryptography securely. The first entry provided an overview covering [architectural details, using stronger algorithms, and debugging tips](http://localhost:4000/2017/03/17/How_to_Get_Started_Using_Java_Cryptography_Securely.html). The second one covered [Cryptographically Secure Pseudo-Random Number Generators](https://1mansis.github.io/2017/03/29/Cryptographically_Secure_Pseudo-Random_Number_Generator.html). This entry will teach you how to securely configure basic encryption/decryption primitives. This blog series should serve as a one-stop resource for anyone who needs to implement a crypto-system in Java. My goal is for it to be a complimentary, security-focused addition to the [JCA Reference Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html). 
 
 Skip to the [tl;dr](#tldr)
 
@@ -207,11 +208,11 @@ c.init(Cipher.ENCRYPT_MODE, skeySpec, randomIvSpec, new SecureRandom()) ;
 
 Most modes of operations also need a nonce (of key and IV pair). So make sure, that not more than a few plaintexts are encrypted with same Key/IV pair.
 
-Full working examples of encryption schemes using Java 8 are in the ["Java_Crypto"](https://github.com/1MansiS/java_crypto) repo on github. More specifically:
+Full working examples of encryption schemes using Java 8 are in the [JavaCrypto](https://github.com/1MansiS/JavaCrypto) repo on github. More specifically:
 
-* [SecuredGCMUsage.java](https://github.com/1MansiS/java_crypto/blob/master/cipher/SecuredGCMUsage.java) for AES using GCM mode
-* [SecurePBKDFUsage.java](https://github.com/1MansiS/java_crypto/blob/master/cipher/SecurePBKDFUsage.java) for PBKDF2 passwords
-* [SecuredRSAUsage.java](https://github.com/1MansiS/java_crypto/blob/master/cipher/SecuredRSAUsage.java) for RSA with OAEPWith<digest>And<mgf>Padding
+* [Secure AES Usage](JavaCryptoModule/SecureJavaCrypto/src/main/java/com/secure/crypto/cipher/symmetric/CipherAPI.java) for AES using GCM mode
+* [Secure Password Storage Usage](JavaCryptoModule/SecureJavaCrypto/src/main/java/com/secure/crypto/password_storage/EncryptedPasswdStorage.java) for PBKDF2 passwords
+* [Secure Asymmetric Encryption](JavaCryptoModule/SecureJavaCrypto/src/main/java/com/secure/crypto/digital_signature/DigitalSignatureAPI.java) application in digital signatures.
 
 # Conclusion: 
 
