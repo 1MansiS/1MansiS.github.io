@@ -5,7 +5,7 @@ title: Talks
 ---
 
 # Completed
-* SecTor, 2020 - [HOW TO STORE SENSITIVE INFORMATION IN 2020](https://sector.ca/sessions/how-to-store-sensitive-information-in-2020/)
+* SecTor, 2020 - [How to store sensitive information in 2020?](https://sector.ca/sessions/how-to-store-sensitive-information-in-2020/)
 * CryptoVillage, Defcon, 2020 - [How to store sensitive info in 2020?](https://www.youtube.com/watch?v=4Tn71-1GN20)
 * CryptoVIllage, DefCon, 2020 - [Dos, Donts and How-Tos of crypto building blocks using Java](https://youtu.be/fvpWEzOOaRA?t=19082)
 * AppSec USA, 2018 - [How To Use Jave Cryptography API Securely ?](https://www.youtube.com/watch?v=PxWnOu9uE1o)
