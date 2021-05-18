@@ -40,11 +40,11 @@ The primary reason to use DRBG is that it is government standardized. Also, the 
 
 Some of the extra algorithm-specific configurations and our recommendations are:
 
-- DRBG mechanism: Underlying mechanism being used should be either Hash or HMAC. Defaults to Hash_SHA256, which is perfectly safe.
-- Security Strength: Default is 128 bits, can be increased.
-- Prediction Resistance: In an event, if the internal state of CSPRNG is compromised, future DRBG outputs won't be impacted. Enable this.
-- Reseeding: This will periodically reseed to avoid too many outputs from a single seed. Enable this.
-- Personalization String: This is a recommended but not required hardcoded string, which plays a role while seeding but not while adding entropy.
+- **DRBG mechanism:** Underlying mechanism being used should be either Hash or HMAC. Defaults to Hash_SHA256, which is perfectly safe.
+- **Security Strength:** Default is 128 bits, can be increased.
+- **Prediction Resistance:** In an event, if the internal state of CSPRNG is compromised, future DRBG outputs won't be impacted. Enable this.
+- **Reseeding:** This will periodically reseed to avoid too many outputs from a single seed. Enable this.
+- **Personalization String:** This is a recommended but not required hardcoded string, which plays a role while seeding but not while adding entropy.
 
 All this can be configured using [DrbgParameter](https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/security/DrbgParameters.html).
 
@@ -70,11 +70,11 @@ There are some exciting advances in Java Cryptography since version 8, and also 
 
 It's 2020 and most of our data is going to be online. To safeguard ourselves against any chosen cipher text attacks, we should only be focused on using Authenticated Encryption schemes. Java offers two authenticated encryption schemes: AES-GCM and ChaCha20-Poly1305. Let's see what's going on with each of these:
 
-#### AES-GCM Cipher Scheme
+#### **AES-GCM Cipher Scheme**
 
 We spoke in length about this in our [encryption/decryption](https://1mansis.github.io/2017/04/18/Encryption_and_Decryption_in_Java_Cryptography.html) post. The only thing that changed since then is how we specify the padding scheme.
 
-Internally, GCM mode is basically a stream cipher where padding is not relevant. Transformation string definition is made consistent with throwing an exception for any other padding except NoPadding[3]. Thus,
+Internally, GCM mode is basically a stream cipher where padding is not relevant. Transformation string definition is made consistent with throwing an exception for any other padding except NoPadding<sup>[3]</sup>. Thus,
 
 ```
 // This is the only transformation string that would work.
@@ -84,9 +84,9 @@ Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
 
 **Refer:** Complete working example of [AES-GCM](https://github.com/1MansiS/JavaCrypto/blob/main/JavaCryptoModule/SecureJavaCrypto/src/main/java/com/secure/crypto/cipher/symmetric/AESCipherAPI.java)
 
-#### ChaCha20-Poly1305 Cipher Scheme
+#### **ChaCha20-Poly1305 Cipher Scheme**
 
-##### Why another Authenticated Encryption Cipher Scheme?
+##### **Why another Authenticated Encryption Cipher Scheme?**
 
 While AES-GCM is the gold standard in authenticated symmetric encryption, imagine a world where, due to advances in cryptoanalysis, AES is broken. This would mean the internet and several other protocols (Bluetooth, Wi-Fi, etc.) would be broken and the worst world won't even have a fully vetted backup plan. Luckily, the wider industry is preparing for such a standby cipher by adopting ChaCha20 stream cipher<sup>[14]</sup>.
 
@@ -94,11 +94,11 @@ One other reason for ChaCha20-Poly1305 adoption would be its speed. To run faste
 
 Google, Cloudflare, and major browsers such as Chrome and Firefox are already using this in their TLS protocols<sup>[17,18]</sup>.
 
-##### HowTo: Design and Code It?
+##### **HowTo: Design and Code It?**
 
 It is nice to see Java providing Authenticated Encryption cipher construction out of the box in terms of the ChaCha20-Poly1305 algorithm. With this scheme, we can encrypt data of up to 256 GB. This is sufficient enough for any online communication needs but may not work for file/disk encryptions.
 
-##### HowTo: Choose the Right Algorithm and Authenticator?
+##### **HowTo: Choose the Right Algorithm and Authenticator?**
 
 AES is a block cipher, where the mode of operation and padding parameters are relevant. ChaCha20 is a stream symmetric cipher, where these parameters are not relevant. In AES, using GCM mode provides authentication. In ChaCha20 ciphers, Poly1305 provides authenticator services. Accordingly, the transformation string to be used is as under:
 
@@ -106,7 +106,7 @@ AES is a block cipher, where the mode of operation and padding parameters are re
 Cipher cipher = Cipher.getInstance("ChaCha20-Poly1305");
 ```
 
-##### HowTo: Generate Keys?
+##### **HowTo: Generate Keys?**
 
 Symmetric Keys are still generated with the [KeyGenerator](https://docs.oracle.com/en/java/javase/15/docs/api/java.base/javax/crypto/KeyGenerator.html) class using the ChaCha20 algorithm. Keys should be 256 bits long. Thus,
 
@@ -116,7 +116,7 @@ keyGenerator.init(256 , new SecureRandom()); // Generate a 256 bit key
 SecretKey chachaKey = keyGenerator.generateKey(); // Generate and store it in SecretKey
 ```
 
-##### HowTo: Configure the Initialization Vector
+##### **HowTo: Configure the Initialization Vector**
 
 Just like AES-GCM mode, we would need to get into transparent specifications using [IvParameterSpec](https://docs.oracle.com/en/java/javase/15/docs/api/java.base/javax/crypto/spec/IvParameterSpec.html) to configure the initialization vector. Chacha20 ciphers need an initialization vector of size 96 bits (12 bytes).
 
@@ -143,13 +143,13 @@ If you are using RSA don't lose sleep over it, but perhaps validate your code ag
 
 Let's briefly look at some of the most commonly used public key applications whose APIs are enhanced by later JDK versions:
 
-##### Digital Signature
+##### **Digital Signature**
 
 In addition to the already matured support for NIST approved elliptic curves, I am most excited about Edward curves support in Java 15 for [Digital Signatures](https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/security/Signature.html) as well as [Key Agreement](https://docs.oracle.com/en/java/javase/15/docs/api/java.base/javax/crypto/KeyAgreement.html) engine classes. We will talk in detail about secure ways of using Digital Signatures in a dedicated upcoming post.
 
 If you are too eager, you can refer to complete working examples of using Digital Signatures using [Edward curves](https://github.com/1MansiS/JavaCrypto/blob/main/JavaCryptoModule/SecureJavaCrypto/src/main/java/com/secure/crypto/digital_signature/EdDigitalSignatureAPI.java) and [NIST curves](https://github.com/1MansiS/JavaCrypto/blob/main/JavaCryptoModule/SecureJavaCrypto/src/main/java/com/secure/crypto/digital_signature/ECDigitalSignatureAPI.java).
 
-##### Key Agreement
+##### **Key Agreement**
 
 Key Agreement engine class is equipped with ECC implementations of its classic counterparts protocols of Diffie Hellman and MQV. It comes with support for NIST curves in ECDH and ECMQV algorithms and Edward Curves in XDH, X25519, & X448 algorithms.
 
