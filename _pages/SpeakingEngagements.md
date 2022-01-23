@@ -5,6 +5,7 @@ title: Talks
 ---
 
 # Completed
+* NorthSec, 2021 - [Cryptography Do's and Don't in 2021](https://youtu.be/_P6qI4ahBVk?t=948)
 * SecTor, 2020 - [How to store sensitive information in 2020?](https://sector.ca/sessions/how-to-store-sensitive-information-in-2020/)
 * CryptoVillage, Defcon, 2020 - [How to store sensitive info in 2020?](https://www.youtube.com/watch?v=4Tn71-1GN20)
 * CryptoVIllage, DefCon, 2020 - [Dos, Donts and How-Tos of crypto building blocks using Java](https://youtu.be/fvpWEzOOaRA?t=19082)
