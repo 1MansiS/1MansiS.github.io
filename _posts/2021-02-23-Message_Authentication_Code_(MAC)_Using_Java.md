@@ -35,7 +35,7 @@ The MAC algorithm (HMAC) takes the message (M) of arbitrary length and generates
 
 # HowTo: Construction of HMAC
 
-![MAC Construction]({{ BASE_PATH }}/assets/images/GSD1.pheno.png)
+![MAC Construction]({{ BASE_PATH }}/assets/images/MAC.jpeg)
 
 # HowTo: Design
 
