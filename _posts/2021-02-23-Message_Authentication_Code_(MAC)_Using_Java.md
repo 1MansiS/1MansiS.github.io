@@ -5,6 +5,8 @@ date:   2021-02-23T20:20:46.000Z
 tags: java_crypto
 ---
 
+Original post was published on Veracode blog [here](https://www.veracode.com/blog/secure-development/message-authentication-code-mac-using-java)
+
 This is the seventh entry in this blog series on using Java Cryptography securely. Starting from the [basics](https://1mansis.github.io/2017/03/17/How_to_Get_Started_Using_Java_Cryptography_Securely.html) we began diving deeper into various basic cryptographic primitives such as [Cryptographically Secure Random Number Generator](https://1mansis.github.io/2017/03/29/Cryptographically_Secure_Pseudo-Random_Number_Generator.html), [symmetric & asymmetric encryption/decryption](https://1mansis.github.io/2017/04/18/Encryption_and_Decryption_in_Java_Cryptography.html) & [hashes](https://1mansis.github.io/2017/06/13/Message_Digests_aka_Hashing_Functions.html). After taking a brief interval, we caught-up with cryptographic updates in the latest Java version.
 
 Skip to the [TL; DR](#tldr)
@@ -29,7 +31,7 @@ The MAC algorithm (HMAC) takes the message (M) of arbitrary length and generates
 
 1. A symmetric key(K) is established between sender and receiver, typically using a secure channel.
 1. The sender computes MAC, using a secure HMAC algorithm on message M and symmetric key(K).
-1. The message is appended with MAC and sent across to the receiver i.e., M || MAC is sent to the receiver.
+1. The message is appended with MAC and sent across to the receiver i.e., M `||` MAC is sent to the receiver.
 1. Receiver pulls apart M and MAC and recomputes MAC from M using the same HMAC algorithm as sender and symmetric key(K).
 1. If the receiver computed MAC == sender sent MAC, authenticity, and integrity of received M is verified. This implies messages have reached received untampered from the stated sender.
 
@@ -63,7 +65,9 @@ It should be clear, HMAC computing algorithm is central in this MAC construction
 Summarizing,
 
 ---
+
 Use only the SHA2 or SHA 3 family of underlying hash for your HMAC algorithm.
+
 ---
 
 ## HowTo: Securely Generate a Symmetric Key?
@@ -71,13 +75,17 @@ Use only the SHA2 or SHA 3 family of underlying hash for your HMAC algorithm.
 Your MAC scheme is as secure as your key. Make sure:
 
 ---
+
 Key size of Symmetric Key(K) is >= 128 bits
+
 ---
 
 and
 
 ---
+
 A computed Symmetric key should be safeguarded as any other cryptographic keying material, i.e., it should be accessed only by involved parties.
+
 ---
 
 ## HowTo: Implement
