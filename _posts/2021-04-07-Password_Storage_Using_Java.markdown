@@ -266,48 +266,48 @@ I will encourage you to experiment with various password storage algorithms, by 
 
 ## Oracle/Java Documentation:
 
-1. [Java Cryptographic Architecture](https://docs.oracle.com/en/java/javase/16/security/java-cryptography-architecture-jca-reference-guide.html#GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190)
+[1]. [Java Cryptographic Architecture](https://docs.oracle.com/en/java/javase/16/security/java-cryptography-architecture-jca-reference-guide.html#GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190)
 
-2. [Java Security Standard Algorithm Names](https://docs.oracle.com/en/java/javase/16/docs/specs/security/standard-names.html)
+[2]. [Java Security Standard Algorithm Names](https://docs.oracle.com/en/java/javase/16/docs/specs/security/standard-names.html)
 
 ## Standards:
 
-3. [NIST SP 800-132](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-132.pdf): Password Based Key
+[3]. [NIST SP 800-132](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-132.pdf): Password Based Key
 
-4. [NIST SP 800-135](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-135r1.pdf): Recommendation for existing application specific KDFs
+[4]. [NIST SP 800-135](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-135r1.pdf): Recommendation for existing application specific KDFs
 
-5. [NIST SP-800-108](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-108.pdf): Recommendation for KDF using pseudo-random
+[5]. [NIST SP-800-108](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-108.pdf): Recommendation for KDF using pseudo-random
 
-6. [RFC 8018](https://tools.ietf.org/html/rfc8018) - Password-Based Cryptography Specification
+[6]. [RFC 8018](https://tools.ietf.org/html/rfc8018) - Password-Based Cryptography Specification
 
-7. [Argon2 Specification](https://password-hashing.net/argon2-specs.pdf)
+[7]. [Argon2 Specification](https://password-hashing.net/argon2-specs.pdf)
 
-8. [scrypt specification](https://www.tarsnap.com/scrypt/scrypt.pdf)
+[8]. [scrypt specification](https://www.tarsnap.com/scrypt/scrypt.pdf)
 
-9. [RFC 8018](https://tools.ietf.org/html/rfc8018): PBKDF2 Specification
+[9]. [RFC 8018](https://tools.ietf.org/html/rfc8018): PBKDF2 Specification
 
-10. [bcrypt algorithm](https://www.usenix.org/legacy/events/usenix99/provos/provos_html/node5.html)
+[10]. [bcrypt algorithm](https://www.usenix.org/legacy/events/usenix99/provos/provos_html/node5.html)
 
 ## Blogs:
 
-11. [Password Hashing: Scrypt, Bcrypt and ARGON2](https://medium.com/analytics-vidhya/password-hashing-pbkdf2-scrypt-bcrypt-and-argon2-e25aaf41598e) - Michele Preziuso
+[11]. [Password Hashing: Scrypt, Bcrypt and ARGON2](https://medium.com/analytics-vidhya/password-hashing-pbkdf2-scrypt-bcrypt-and-argon2-e25aaf41598e) - Michele Preziuso
 
-12. [scrypt parameters](https://stackoverflow.com/questions/11126315/what-are-optimal-scrypt-work-factors)
+[12]. [scrypt parameters](https://stackoverflow.com/questions/11126315/what-are-optimal-scrypt-work-factors)
 
-13. [NIST Password guidance simplified](https://securityboulevard.com/2019/03/nist-800-63-password-guidelines/)
+[13]. [NIST Password guidance simplified](https://securityboulevard.com/2019/03/nist-800-63-password-guidelines/)
 
 ## Misc:
 
-14. [Password Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
+[14]. [Password Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
 
-15. [Salted Password Hashing - Doing it Right](https://crackstation.net/hashing-security.htm)
+[15]. [Salted Password Hashing - Doing it Right](https://crackstation.net/hashing-security.htm)
 
-16. [List of Data Breaches](https://en.wikipedia.org/wiki/List_of_data_breaches)
+[16]. [List of Data Breaches](https://en.wikipedia.org/wiki/List_of_data_breaches)
 
-17. [Parameter Tuning Guidance - Argon2](https://www.twelve21.io/how-to-choose-the-right-parameters-for-argon2/)
+[17]. [Parameter Tuning Guidance - Argon2](https://www.twelve21.io/how-to-choose-the-right-parameters-for-argon2/)
 
-18. [Parameter choice for PBKDF2](https://cryptosense.com/blog/parameter-choice-for-pbkdf2/)
+[18]. [Parameter choice for PBKDF2](https://cryptosense.com/blog/parameter-choice-for-pbkdf2/)
 
-19. [How To Store Sensitive Information In 2020](https://sector.ca/sessions/how-to-store-sensitive-information-in-2020/)
+[19]. [How To Store Sensitive Information In 2020](https://sector.ca/sessions/how-to-store-sensitive-information-in-2020/)
 
 
