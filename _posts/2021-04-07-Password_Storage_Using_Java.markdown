@@ -35,7 +35,9 @@ Each of these algorithms has some set of parameters that needs to be configured 
 Summarizing,
 
 ---
+
 Salts: Should be CSPRNG, unique per password and stored separately from password hashes.
+
 ---
 
 2. Work Factor: Work Factors are parameters used for each password hash computation with the sole purpose of making hash calculations slower, thus more computationally expensive, which in turn makes offline password cracking slower. For adaptive functions, the only work factor involved is the number of crypto iterations per calculation. With memory hard functions, we additionally have a few more parameters such as memory and CPU threads which adds more complexity to hashing, making it that much harder for offline cracking. Things to consider while thinking about Work Factors:
@@ -47,7 +49,9 @@ Salts: Should be CSPRNG, unique per password and stored separately from password
 Summarizing,
 
 ---
+
 Work Factors: Should be a fine balance between security and performance, configured unique to server, different per user, and re-tuned periodically
+
 ---
 
 Let's start discussing the algorithms to be considered in detail followed by some of the runner-ups: 
