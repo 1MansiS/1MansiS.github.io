@@ -13,7 +13,7 @@ Password being such a central piece of any authentication-based system, every de
 
 Historical methods of storing passwords<sup>[15]</sup> have fallen short against growing computing powers, modern computer architectures, and enhanced attacks. Currently, the most secure way to store passwords is using **Password Based Encryption (PBE)**, which provides functions (called **Key Derivation Functions (KDFs)**) that will convert low entropy user passwords into random, unpredictable, and most importantly one-way, irreversible bytes of data. It should be these bytes of data which should be stored and never plain text passwords to safeguard against offline attacks. KDFs used to generate these random bytes of data are commonly called as password hashing algorithms. They can also be extended to store any kind of sensitive information such as PII (Personally Identifiable Information) which your business needs to protect against offline attacks.
 
-Skip to the [TL; DR](#tldr)
+Skip to the [TL;DR](#tldr)
 
 In this post, we will be talking about various KDFs based password hashing algorithms to be used for any password storage requirements.
 
@@ -23,14 +23,14 @@ Construction of KDFs has evolved over time. There are two broad categories of pa
 
 1. Adaptive Functions: Designed to iterate over inner crypto operations 1000s of times, to make password computations slower. Prominent functions are PBKDF2<sup>[3][4][9]</sup> which iterates over a HMAC function and bcrypt<sup>[10]</sup> which iterates over a blowfish based encryption scheme.
 
-2. Memory Hard Functions: Memory hard functions are designed with significant internal memory, which effectively decimates traditional brute forcing techniques even with utilizing modern computer architectures. Prominent functions in this category are Argon2<sup>[7]<sup> and scrypt<sup>[8]</sup>.
+2. Memory Hard Functions: Memory hard functions are designed with significant internal memory, which effectively decimates traditional brute forcing techniques even with utilizing modern computer architectures. Prominent functions in this category are Argon2<sup>[7]</sup> and scrypt<sup>[8]</sup>.
 
 Each of these algorithms has some set of parameters that needs to be configured judiciously. Before getting into a full-fledged conversation about various algorithms, let’s talk about some of the commonalities:
 
-1. Salt Generation: When designing salting features of your application, make sure:
-- Unique salt is generated for each password.
-- To store salt and corresponding hashed password far from each other; like different data stores.
-- Salt is generated using a cryptographically strong random number generator discussed in the [CSPRNG post](https://1mansis.github.io/2017/03/29/Cryptographically_Secure_Pseudo-Random_Number_Generator.html) and in the [Catchup post’s DRBG section](https://1mansis.github.io/2020/11/16/Java_Crypto_Catchup.html).
+1. **Salt Generation**: When designing salting features of your application, make sure:
+    - Unique salt is generated for each password.
+    - To store salt and corresponding hashed password far from each other; like different data stores.
+    - Salt is generated using a cryptographically strong random number generator discussed in the [CSPRNG post](https://1mansis.github.io/2017/03/29/Cryptographically_Secure_Pseudo-Random_Number_Generator.html) and in the [Catchup post’s DRBG section](https://1mansis.github.io/2020/11/16/Java_Crypto_Catchup.html).
 
 Summarizing,
 
@@ -40,11 +40,11 @@ Salts: Should be CSPRNG, unique per password and stored separately from password
 
 ---
 
-2. Work Factor: Work Factors are parameters used for each password hash computation with the sole purpose of making hash calculations slower, thus more computationally expensive, which in turn makes offline password cracking slower. For adaptive functions, the only work factor involved is the number of crypto iterations per calculation. With memory hard functions, we additionally have a few more parameters such as memory and CPU threads which adds more complexity to hashing, making it that much harder for offline cracking. Things to consider while thinking about Work Factors:
+2. **Work Factor**: Work Factors are parameters used for each password hash computation with the sole purpose of making hash calculations slower, thus more computationally expensive, which in turn makes offline password cracking slower. For adaptive functions, the only work factor involved is the number of crypto iterations per calculation. With memory hard functions, we additionally have a few more parameters such as memory and CPU threads which adds more complexity to hashing, making it that much harder for offline cracking. Things to consider while thinking about Work Factors:
 
-- Work factor parameters should be individually tuned for each authentication server application. General guidance would be any interactive application should take at least 1 sec throughput and for non-interactive 5 secs are acceptable values.
-- Work Factors should be re-evaluated from time to time (ideally yearly), to keep up with hardware advances.
-- They are typically stored in password hash outputs making it a good idea to configure different iterations for each password.
+    - Work factor parameters should be individually tuned for each authentication server application. General guidance would be any interactive application should take at least 1 sec throughput and for non-interactive 5 secs are acceptable values.
+    - Work Factors should be re-evaluated from time to time (ideally yearly), to keep up with hardware advances.
+    - They are typically stored in password hash outputs making it a good idea to configure different iterations for each password.
 
 Summarizing,
 
@@ -254,7 +254,7 @@ Designing password hashing mechanisms is one piece of a much-complicated puzzle,
 
 I will encourage you to experiment with various password storage algorithms, by invoking corresponding endpoints discussed in [Java Crypto MicroService](https://github.com/1MansiS/JavaCrypto).
 
-TL; DR
+# TL;DR
 
 - Historical methods of storing passwords such as computing its hash, using salts etc. easily crumbles to growing computing resources.
 - Using one of the suitable key derivation functions (KDFs), derive a hash version of the plain text password and never persist its plain text version.
