@@ -5,6 +5,7 @@ title: Talks
 ---
 
 # Completed
+* JavZone, 2022 - [JavaCrypto: Don’t Just Get it Working, Use it Securely](https://2022.javazone.no/#/program/591413dc-07bc-446e-8658-d01e82325dff)
 * NorthSec, 2021 - [Cryptography Do's and Don't in 2021](https://youtu.be/_P6qI4ahBVk?t=948)
 * SecTor, 2020 - [How to store sensitive information in 2020?](https://sector.ca/sessions/how-to-store-sensitive-information-in-2020/)
 * CryptoVillage, Defcon, 2020 - [How to store sensitive info in 2020?](https://www.youtube.com/watch?v=4Tn71-1GN20)
