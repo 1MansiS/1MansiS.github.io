@@ -20,6 +20,7 @@
             {% if site.minima.social_links.size > 0 %}
                 <p>Variable value: {{ site.minima.social_links.size }}</p>
                 {% for platform in site.minima.social_links %}
+                        <p>Variable value: {{ platform }} ::: {{ site.minima.social_links[platform] }}</p>
                             <a href="https://{{ platform }}.com/{{ site.minima.social_links[platform] }}" target="_blank">
                               <img src="/assets/{{ platform }}-icon.svg" alt="{{ platform }}" width="24">
                             </a>
