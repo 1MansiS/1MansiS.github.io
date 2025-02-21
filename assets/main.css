@@ -79,7 +79,7 @@ main {
     display: flex;
     overflow: visible;
     gap: 15px; /* Space between icons */
-    background-color: red;
+    /*background-color: red;*/
 }
 
 .social-icons img {
