@@ -18,9 +18,8 @@
         <div class="social-icons">
              {% if site.minima.social_links.size > 0 %}
                 {% for platform in site.minima.social_links %}
-                        <p>Variable value: {{ platform[0] }} ::: {{ platform[1] }}</p>
-                            <a href="https://{{ platform }}.com/{{ site.minima.social_links[platform] }}" target="_blank">
-                              <img src="/assets/{{ platform }}-icon.svg" alt="{{ platform }}" width="24">
+                            <a href="https://{{ platform[0] }}.com/{{ platform[1] }}" target="_blank">
+                              <img src="/assets/{{ platform[0] }}-icon.svg" alt="{{ platform[0] }}" width="24">
                             </a>
                 {% endfor %}
             {% endif %}
