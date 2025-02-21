@@ -1,6 +1,6 @@
 ---
 permalink: /about
-layout: page
+layout: default
 title: About
 ---
 ![](https://avatars1.githubusercontent.com/u/10903814?s=400&u=4ce3516fbec7c03379a2c037680dae87e977454c&v=4)
