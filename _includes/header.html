@@ -15,7 +15,7 @@
         </nav>
 
         <!-- Right-aligned Social Media Icons -->
-       <!-- <div class="social-icons"> -->
+       <div class="social-icons">
              {% if site.minima.social_links.size > 0 %}
                 {% for platform in site.minima.social_links %}
                             <a href="https://{{ platform[0] }}.com/{{ platform[1] }}" target="_blank">
@@ -23,10 +23,10 @@
                             </a>
                 {% endfor %}
             {% endif %}
-            <a href="mailto:{{ site.author.email }}">{{ site.author.email }}
+            <a href="mailto:{{ site.author.email }}">
                 <img src="{{ site.baseurl }}/assets/email-icon.svg" alt="email" width="24">
             </a>    
-       <!-- </div> -->
+       </div>
         
     </div>
 </header>
