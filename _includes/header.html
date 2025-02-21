@@ -16,7 +16,9 @@
 
         <!-- Right-aligned Social Media Icons -->
         <div class="social-icons">
+            <p>Variable value: {{ site.minima.social_links.size }}</p>
             {% if site.minima.social_links.size > 0 %}
+                <p>Variable value: {{ site.minima.social_links.size }}</p>
                 {% for platform in site.minima.social_links %}
                       {% assign link = site.minima.social_links[platform] %}
                       {% if link %}
