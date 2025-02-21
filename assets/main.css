@@ -14,14 +14,69 @@ main {
     padding: 20px;
 }
 
-.sidebar {
-    flex: 1;
-    padding: 20px;
-    background: #f4f4f4;
+/* --- Header Styling --- */
+.site-header {
+    background: #2c3e50; /* Dark blue header */
+    color: white;
+    padding: 15px 0;
 }
 
-.footer {
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-title a {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.site-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.site-nav a:hover {
+    text-decoration: underline;
+}
+
+/* --- Footer Styling --- */
+.site-footer {
+    background: #2c3e50;
+    color: white;
     text-align: center;
-    padding: 10px;
-    background: #ddd;
+    padding: 15px 0;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.site-footer a {
+    color: #1abc9c; /* Teal links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
