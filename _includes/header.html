@@ -15,16 +15,19 @@
         </nav>
 
         <!-- Right-aligned Social Media Icons -->
+        <a href="https://twitter.com/1MansiS" target="_blank">
+               <img src="{{ site.baseurl }}/assets/twitter-icon.svg" alt="x" width="24">
+            </a>
         <div class="social-icons">
              {% if site.minima.social_links.size > 0 %}
                 {% for platform in site.minima.social_links %}
                             <a href="https://{{ platform[0] }}.com/{{ platform[1] }}" target="_blank">
-                              <img src="{{site.baseurl }}/assets/{{ platform[0] }}-icon.svg" alt="{{ platform[0] }}" width="24">
+                              <img src="{{ site.baseurl }}/assets/{{ platform[0] }}-icon.svg" alt="{{ platform[0] }}" width="24">
                             </a>
                 {% endfor %}
             {% endif %}
             <a href="https://github.com/1MansiS" target="_blank">
-               <img src="{{BASE_PATH}}/assets/github-icon.svg" alt="github" width="24">
+               <img src="{{ site.baseurl }}/assets/github-icon.svg" alt="github" width="24">
             </a>
         </div>
         
