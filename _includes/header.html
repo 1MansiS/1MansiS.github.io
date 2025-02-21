@@ -16,11 +16,9 @@
 
         <!-- Right-aligned Social Media Icons -->
         <div class="social-icons">
-            <p>Variable value: {{ site.minima.social_links.size }}</p>
-            {% if site.minima.social_links.size > 0 %}
-                <p>Variable value: {{ site.minima.social_links.size }}</p>
+             {% if site.minima.social_links.size > 0 %}
                 {% for platform in site.minima.social_links %}
-                        <p>Variable value: {{ platform }} ::: {{ site.minima.social_links[platform] }}</p>
+                        <p>Variable value: {{ platform[0] }} ::: {{ platform[1] }}</p>
                             <a href="https://{{ platform }}.com/{{ site.minima.social_links[platform] }}" target="_blank">
                               <img src="/assets/{{ platform }}-icon.svg" alt="{{ platform }}" width="24">
                             </a>
