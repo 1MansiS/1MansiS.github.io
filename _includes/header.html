@@ -19,7 +19,7 @@
              {% if site.minima.social_links.size > 0 %}
                 {% for platform in site.minima.social_links %}
                             <a href="https://{{ platform[0] }}.com/{{ platform[1] }}" target="_blank">
-                              <img src="{{{{ site.baseurl }}}}/assets/{{ platform[0] }}-icon.svg" alt="{{ platform[0] }}" width="24">
+                              <img src="{{site.baseurl }}/assets/{{ platform[0] }}-icon.svg" alt="{{ platform[0] }}" width="24">
                             </a>
                 {% endfor %}
             {% endif %}
