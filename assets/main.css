@@ -78,12 +78,14 @@ main {
 /* --- Right-aligned Social Icons --- */
 .social-icons {
     display: flex;
+    overflow: visible;
     gap: 15px; /* Space between icons */
 }
 
 .social-icons img {
     width: 24px; /* Adjust icon size */
     height: 24px;
+    opacity: 1;
    /* filter: brightness(0) invert(1);*/ /* Makes SVGs white */
 }
 
