@@ -1,6 +1,6 @@
 ---
 permalink: /SpeakingEngagements
-layout: page
+layout: default
 title: Talks
 ---
 
