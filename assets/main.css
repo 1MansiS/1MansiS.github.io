@@ -84,8 +84,8 @@ main {
 .social-icons img {
     width: 24px; /* Adjust icon size */
     height: 24px;
-    opacity: 1;
-    fill: black;
+    /*opacity: 1;*/
+    /*fill: black;*/
    /* filter: brightness(0) invert(1);*/ /* Makes SVGs white */
 }
 
