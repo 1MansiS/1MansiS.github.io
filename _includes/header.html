@@ -20,6 +20,7 @@
             {% if site.minima.social_links.size > 0 %}
                 <p>Variable value: {{ site.minima.social_links.size }}</p>
                 {% for platform in site.minima.social_links %}
+                      <p>Platform value: {{ platform : site.minima.social_links[platform] }}</p>  
                       {% assign link = site.minima.social_links[platform] %}
                       {% if link %}
                             <a href="https://{{ platform }}.com/{{ link }}" target="_blank">
