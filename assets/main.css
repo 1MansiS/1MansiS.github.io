@@ -23,8 +23,7 @@ main {
 
 .site-header .container {
     display: flex;
-    justify-content: left;
-    /*justify-content: space-between; */ /* Ensures proper alignment */
+    justify-content: space-between;  /* Ensures proper alignment */
     align-items: center;
     max-width: 1100px;
     margin: 0 auto;
@@ -45,7 +44,6 @@ main {
 
 /* --- Center-aligned Navigation --- */
 .site-nav {
-    flex-grow: unset;
     display: flex;
     color: #1abc9c;
     justify-content: center; /* Centers navigation */
