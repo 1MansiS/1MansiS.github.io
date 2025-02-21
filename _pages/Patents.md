@@ -1,6 +1,6 @@
 ---
 permalink: /patents
-layout: page
+layout: default
 title: Patents
 ---
 
