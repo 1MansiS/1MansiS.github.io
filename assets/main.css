@@ -16,7 +16,7 @@ main {
 
 /* --- Header Styling --- */
 .site-header {
-    background: #2c3e50; /* Dark blue header */
+    background: #2c3e50; /* Dark blue */
     color: white;
     padding: 15px 0;
 }
@@ -30,19 +30,17 @@ main {
     padding: 0 20px;
 }
 
-.site-title a {
-    font-size: 22px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
+/* --- Makes Navigation Horizontal --- */
 .site-nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 20px; /* Adds space between links */
     padding: 0;
     margin: 0;
+}
+
+.site-nav li {
+    display: inline; /* Ensures links stay in a row */
 }
 
 .site-nav a {
@@ -54,6 +52,14 @@ main {
 
 .site-nav a:hover {
     text-decoration: underline;
+}
+
+/* --- Site Title (Left Side) --- */
+.site-title a {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
 }
 
 /* --- Footer Styling --- */
