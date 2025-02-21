@@ -1,0 +1,22 @@
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Ensures horizontal layout */
+  gap: 20px; /* Adds space between links */
+}
+
+nav ul li {
+  display: inline; /* Keeps list items in a row */
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #333; /* Adjust color as needed */
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #007acc; /* Change hover color */
+}
