@@ -13,5 +13,19 @@
                 <li><a href="{{ '/assets/MansiSheth.pdf' | relative_url }}" target="_blank">Resume</a></li>
             </ul>
         </nav>
+
+        <!-- Right-aligned Social Media Icons -->
+        <div class="social-icons">
+            {% if site.social_links %}
+                {% for platform, link in site.social_links %}
+                    {% if link %}
+                        <a href="https://{{ platform }}.com/{{ link }}" target="_blank">
+                            <img src="/assets/{{ platform }}-icon.svg" alt="{{ platform }}" width="24">
+                        </a>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        </div>
+        
     </div>
 </header>
