@@ -46,11 +46,13 @@ main {
 .site-nav {
     flex-grow: 1;
     display: flex;
+    color: #1abc9c;
     justify-content: center; /* Centers navigation */
 }
 
 .site-nav ul {
     list-style: none;
+    color: #1abc9c;
     display: flex;
     gap: 20px;
     padding: 0;
@@ -59,6 +61,7 @@ main {
 
 .site-nav li {
     display: inline;
+    color: #1abc9c;
 }
 
 .site-nav a {
