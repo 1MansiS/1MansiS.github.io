@@ -79,12 +79,14 @@ main {
     display: flex;
     overflow: visible;
     gap: 15px; /* Space between icons */
+    background-color: red;
 }
 
 .social-icons img {
     width: 24px; /* Adjust icon size */
     height: 24px;
-    /*opacity: 1;*/
+    opacity: 1;
+    visibility: visible; 
     /*fill: black;*/
    /* filter: brightness(0) invert(1);*/ /* Makes SVGs white */
 }
