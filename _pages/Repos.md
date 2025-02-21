@@ -1,6 +1,6 @@
 ---
 permalink: /repos
-layout: page
+layout: default
 title: Projects
 ---
 
