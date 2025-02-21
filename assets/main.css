@@ -1,22 +1,27 @@
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex; /* Ensures horizontal layout */
-  gap: 20px; /* Adds space between links */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-nav ul li {
-  display: inline; /* Keeps list items in a row */
+.content {
+    display: flex;
+    flex: 1;
 }
 
-nav ul li a {
-  text-decoration: none;
-  padding: 10px 15px;
-  color: #333; /* Adjust color as needed */
-  font-weight: bold;
+main {
+    flex: 3;
+    padding: 20px;
 }
 
-nav ul li a:hover {
-  color: #007acc; /* Change hover color */
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #ddd;
 }
