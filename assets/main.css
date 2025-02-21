@@ -16,14 +16,14 @@ main {
 
 /* --- Header Styling --- */
 .site-header {
-    background: #ffffff; /* Dark background */
+    background: #ffffff; 
     color: #1abc9c;
     padding: 15px 0;
 }
 
 .site-header .container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     /*justify-content: space-between; */ /* Ensures proper alignment */
     align-items: center;
     max-width: 1100px;
