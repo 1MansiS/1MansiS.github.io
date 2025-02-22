@@ -82,10 +82,10 @@ main {
 .social-icons img {
     width: 24px; /* Adjust icon size */
     height: 24px;
-  /*  opacity: 1;
+    opacity: 1;
     visibility: visible;
     filter: none;
-    display: block;
+  /*  display: block;
     fill: black;*/
 }
 
