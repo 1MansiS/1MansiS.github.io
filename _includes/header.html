@@ -1,32 +1,5 @@
-<header class="site-header">
-    <div class="container">
-        <h1 class="site-title">
-            <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-        </h1>
-        <nav class="site-nav">
-            <ul>
-                {% for page in site.pages %}
-                    {% if page.title %}
-                        <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
-                    {% endif %}
-                {% endfor %}
-                <li><a href="{{ '/assets/MansiSheth.pdf' | relative_url }}" target="_blank">Resume</a></li>
-            </ul>
-        </nav>
-
-        <!-- Right-aligned Social Media Icons -->
-       <div class="social-icons">
-             {% if site.minima.social_links.size > 0 %}
-                {% for platform in site.minima.social_links %}
-                            <a href="https://{{ platform[0] }}.com/{{ platform[1] }}" target="_blank">
-                              <img src="{{ site.baseurl }}/assets/{{ platform[0] }}-icon.svg" alt="{{ platform[0] }}" width="24">
-                            </a>
-                {% endfor %}
-            {% endif %}
-            <a href="mailto:{{ site.author.email }}">
-                <img src="{{ site.baseurl }}/assets/email-icon.svg" alt="email" width="24">
-            </a>    
-       </div>
-        
-    </div>
-</header>
+<div class="social-icons">
+   <a href="https://github.com/1MansiS" target="_blank">
+      <img src="{{ site.baseurl }}/assets/github-icon.svg" alt="github" width="24">
+   </a>
+</div>
