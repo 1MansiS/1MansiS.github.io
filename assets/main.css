@@ -92,7 +92,6 @@ main {
     filter: none; 
     display: block;
     /*fill: black;*/
-   /* filter: brightness(0) invert(1);*/ /* Makes SVGs white */
 }
 
 .social-icons a:hover img {
