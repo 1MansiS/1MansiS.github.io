@@ -87,6 +87,7 @@ main {
     height: 24px;
     opacity: 1;
     visibility: visible; 
+    filter: none; 
     /*fill: black;*/
    /* filter: brightness(0) invert(1);*/ /* Makes SVGs white */
 }
