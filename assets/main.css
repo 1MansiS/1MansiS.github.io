@@ -76,17 +76,17 @@ main {
 
 /* --- Right-aligned Social Icons --- */
 .social-icons {
-    display: flex;
+   /* display: flex; */
     overflow: visible;
     z-index: 1000; 
     position: relative;
-    gap: 15px; /* Space between icons */
+    /*gap: 15px;*/ /* Space between icons */
     /*background-color: red;*/
 }
 
 .social-icons img {
-    width: 24px; /* Adjust icon size */
-    height: 24px;
+    /*width: 24px;*/ /* Adjust icon size */
+    /*height: 24px;*/
     opacity: 1;
     visibility: visible; 
     filter: none; 
