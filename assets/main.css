@@ -78,6 +78,8 @@ main {
 .social-icons {
     display: flex;
     overflow: visible;
+    z-index: 1000; 
+    position: relative;
     gap: 15px; /* Space between icons */
     /*background-color: red;*/
 }
@@ -88,6 +90,7 @@ main {
     opacity: 1;
     visibility: visible; 
     filter: none; 
+    display: block;
     /*fill: black;*/
    /* filter: brightness(0) invert(1);*/ /* Makes SVGs white */
 }
