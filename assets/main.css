@@ -75,12 +75,12 @@ main {
 
 /* --- Right-aligned Social Icons --- */
 .social-icons {
-    /* display: flex; */
-    /* overflow: visible; */
-    /* z-index: 1000; */
-    /* position: relative; */
-    gap: 15px; /* Space between icons */
-    /* background-color: red; */
+     display: flex; 
+     gap: 15px; /* Space between icons */
+     /* background-color: red; */
+     /* overflow: visible; */
+     /* z-index: 1000; */
+     /* position: relative; */
 }
 
 .social-icons img {
@@ -91,7 +91,6 @@ main {
     filter: none;
     display: block;
     fill: black;
-    /* filter: brightness(0) invert(1); */ /* Makes SVGs white */
 }
 
 .social-icons a:hover img {
