@@ -77,20 +77,16 @@ main {
 .social-icons {
      display: flex; 
      gap: 15px; /* Space between icons */
-     /* background-color: red; */
-     /* overflow: visible; */
-     /* z-index: 1000; */
-     /* position: relative; */
 }
 
 .social-icons img {
     width: 24px; /* Adjust icon size */
     height: 24px;
-    opacity: 1;
+  /*  opacity: 1;
     visibility: visible;
     filter: none;
     display: block;
-    fill: black;
+    fill: black;*/
 }
 
 .social-icons a:hover img {
