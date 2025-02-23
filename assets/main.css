@@ -92,7 +92,8 @@ main {
 }
 
 .social-icons a:hover img {
-    filter: brightness(0.8); /* Slight hover effect */
+    filter: none; 
+    /*filter: brightness(0.8);*/ /* Slight hover effect */
 }
 
 /* --- Footer Styling --- */
