@@ -85,7 +85,8 @@ main {
     opacity: 1;
     visibility: visible;
     filter: none;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
+    fill: black;
   /*  display: block;
     fill: black;*/
 }
