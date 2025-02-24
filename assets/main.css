@@ -88,6 +88,7 @@ main {
     background-color: white;
     /*border: 2px solid red;*/
     fill: black;
+    border: 2px solid red;
   /*  display: block;
     fill: black;*/
 }
