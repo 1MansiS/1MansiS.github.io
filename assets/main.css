@@ -85,7 +85,7 @@ main {
     opacity: 1;
     visibility: visible;
     filter: none;
-    background-color: white;
+    background-color: black;
     /*border: 2px solid red;*/
     fill: black;
     border: 2px solid red;
