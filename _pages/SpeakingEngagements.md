@@ -6,10 +6,10 @@ title: Talks
 
 
 # Conference Talks:
-* SecTor, 2022 - [Java Crypto: Don’t Just Get it Working, Use it Securely](https://sector.ca/sessions/java-crypto-dont-just-get-it-working-use-it-securely/)
+* SecTor, 2022 - [Java Crypto: Don’t Just Get it Working, Use it Securely](https://web.archive.org/web/20221201192406/https://sector.ca/sessions/java-crypto-dont-just-get-it-working-use-it-securely/)
 * JavaZone, 2022 - [JavaCrypto: Don’t Just Get it Working, Use it Securely](https://2022.javazone.no/#/program/591413dc-07bc-446e-8658-d01e82325dff)
 * NorthSec, 2021 - [Cryptography Do's and Don't in 2021](https://youtu.be/_P6qI4ahBVk?t=948)
-* SecTor, 2020 - [How to store sensitive information in 2020?](https://sector.ca/sessions/how-to-store-sensitive-information-in-2020/)
+* SecTor, 2020 - [How to store sensitive information in 2020?](https://web.archive.org/web/20221003190325/https://sector.ca/sessions/how-to-store-sensitive-information-in-2020/)
 * CryptoVillage, Defcon, 2020 - [How to store sensitive info in 2020?](https://www.youtube.com/watch?v=4Tn71-1GN20)
 * CryptoVIllage, DefCon, 2020 - [Dos, Donts and How-Tos of crypto building blocks using Java](https://youtu.be/fvpWEzOOaRA?t=19082)
 * AppSec USA, 2018 - [How To Use Jave Cryptography API Securely ?](https://www.youtube.com/watch?v=PxWnOu9uE1o)
