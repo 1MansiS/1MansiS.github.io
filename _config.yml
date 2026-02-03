@@ -32,11 +32,10 @@ plugins:
  - jekyll-seo-tag
 
 header_pages:
-  - about.md
-  - Repos.md
-  - SpeakingEngagements.md
-  - Patents.md
-  - ReadingNotes.md
+  - /_pages/about.md
+  - /_pages/Repos.md
+  - /_pages/SpeakingEngagements.md
+  - /_pages/Patents.md
 
 include:
   - _pages
