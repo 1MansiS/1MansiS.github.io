@@ -36,7 +36,8 @@ header_pages:
   - _pages/Repos.md
   - _pages/SpeakingEngagements.md
   - _pages/Patents.md
-  - _pages/ReadingNotes.md
+  - reading-notes/index.md
 
 include:
   - _pages
+  - reading-notes
