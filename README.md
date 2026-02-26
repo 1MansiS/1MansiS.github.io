@@ -73,28 +73,42 @@ Your note content. Full markdown: **bold**, `code`, bullet lists, all work.
 
 Reading log entries are also in `_notes/`, with `topic: reading` and a different front matter shape:
 
-**Create `_notes/reading-your-title.md`:**
+**Create `_notes/rl-your-title.md`:**
 
 ```yaml
 ---
 topic: reading
-section: "Papers"      # Papers | Books | Courses | Reference — or anything new
+section: "Papers"      # Papers | Books | Courses | Videos | Podcasts — or anything new
 title: "Paper or Book Title"
-url: "https://..."     # optional — omit for books without a public URL
 author: "Author · Publisher · Year · one-line description"
 status: done           # done | reading | queue
+link: "https://..."    # optional — external URL (source, Apple Podcasts, YouTube, etc.)
+notes_url: /ai/foundations/   # optional — links to a detailed note on another AI page
 ---
+Optional inline notes. Full markdown supported — bullet lists, **bold**, etc.
+If present, a collapsible "Notes ▸" toggle appears on the reading log row.
+Leave the body empty if there are no notes for this entry.
 ```
 
-Leave the body empty — the reading log renders title, author, and a status pill. No note content needed.
+**Front matter fields:**
+
+| Field | Required | Purpose |
+|---|---|---|
+| `topic` | ✅ | Always `reading` for log entries |
+| `section` | ✅ | Groups entries under a header on the page |
+| `title` | ✅ | Title of the book, paper, podcast, etc. |
+| `author` | ✅ | Author, publisher, or podcast name |
+| `status` | ✅ | `done` / `reading` / `queue` |
+| `link` | optional | External URL — makes the title a clickable link |
+| `notes_url` | optional | Path to a detailed note on another AI page (e.g. `/ai/secai/`) — renders as `See notes →` |
 
 **Status pill values:**
 
-| `status:` | Pill |
+| `status:` | Pill label (varies by section) |
 |---|---|
-| `done` | Read (green) |
-| `reading` | Reading (blue) |
-| `queue` | To Read (grey) |
+| `done` | Read / Listened / Watched / Finished (green) |
+| `reading` | Reading / Listening / Watching / In Progress (blue) |
+| `queue` | To Read / To Listen / To Watch / To Start (grey) |
 
 ---
 

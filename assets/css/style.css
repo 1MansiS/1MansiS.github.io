@@ -432,8 +432,6 @@ button { font-family: var(--sans); cursor: pointer; }
 
 /* reading log rows */
 .read-row {
-  display: grid; grid-template-columns: 1fr auto;
-  gap: .85rem; align-items: start;
   padding: 1.1rem 1.4rem;
   background: var(--surface); border: 1px solid var(--border);
   border-left: 3px solid var(--amber);
@@ -442,10 +440,16 @@ button { font-family: var(--sans); cursor: pointer; }
   transition: box-shadow var(--dur) var(--ease);
 }
 .read-row:hover { box-shadow: var(--shadow2); }
+.read-main {
+  display: grid; grid-template-columns: 1fr auto;
+  gap: .85rem; align-items: start;
+}
 .read-title { font-family: var(--serif); font-size: .97rem; font-weight: 600; color: var(--text); margin-bottom: .22rem; }
 .read-title a { color: inherit; text-decoration: none; }
 .read-title a:hover { color: var(--gold); }
 .read-author { font-size: .8rem; color: var(--muted); }
+.read-notes-link { font-size: .78rem; font-weight: 500; color: var(--amber); text-decoration: none; }
+.read-notes-link:hover { color: var(--gold2); }
 .read-pill {
   display: inline-flex; padding: .18rem .55rem; border-radius: 100px;
   font-size: .66rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em;
@@ -454,6 +458,35 @@ button { font-family: var(--sans); cursor: pointer; }
 .rp-done    { background: var(--green-bg);  border: 1px solid var(--green-bd);  color: var(--green); }
 .rp-reading { background: var(--blue-bg);   border: 1px solid var(--blue-bd);   color: var(--blue); }
 .rp-queue   { background: var(--surface2);  border: 1px solid var(--border2);   color: var(--muted); }
+
+/* inline notes expansion */
+.read-notes {
+  margin-top: .75rem;
+  border-top: 1px solid var(--border);
+  padding-top: .65rem;
+}
+.read-notes summary {
+  font-size: .72rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .09em; color: var(--amber);
+  cursor: pointer; list-style: none;
+  display: inline-flex; align-items: center; gap: .35rem;
+  user-select: none;
+}
+.read-notes summary::-webkit-details-marker { display: none; }
+.read-notes summary::before {
+  content: '▸'; font-size: .65rem; transition: transform var(--dur) var(--ease);
+}
+.read-notes[open] summary::before { transform: rotate(90deg); }
+.read-notes-body {
+  margin-top: .65rem;
+  font-size: .84rem; color: var(--muted); line-height: 1.7;
+}
+.read-notes-body p  { margin-bottom: .6rem; }
+.read-notes-body p:last-child { margin-bottom: 0; }
+.read-notes-body ul { padding-left: 1.2rem; margin-bottom: .6rem; }
+.read-notes-body li { margin-bottom: .25rem; }
+.read-notes-body strong { color: var(--text); font-weight: 600; }
+.read-notes-body em { font-style: italic; }
 
 /* 12. AI SUBNAV
 -------------------------------------------------------------- */
@@ -530,7 +563,7 @@ button { font-family: var(--sans); cursor: pointer; }
   .hero-grid { grid-template-columns: 1fr; gap: 2.25rem; }
   .contact-grid { grid-template-columns: 1fr; }
   .blog-row { grid-template-columns: 1fr; gap: .2rem; }
-  .read-row { grid-template-columns: 1fr; }
+  .read-main { grid-template-columns: 1fr; }
   .proj-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 440px) {
