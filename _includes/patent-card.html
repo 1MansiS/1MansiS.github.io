@@ -1,0 +1,9 @@
+<div class="acard">
+  <div class="pat-pill{% if include.pending %} pending{% endif %}">{{ include.patent.pill | default: "Pending" }}</div>
+  <h3>{{ include.patent.title }}</h3>
+  {% if include.patent.number %}
+  <p><a href="{{ include.patent.url }}" target="_blank" rel="noopener">{{ include.patent.number }}</a></p>
+  {% else %}
+  <p>Application <a href="{{ include.patent.url }}" target="_blank" rel="noopener">{{ include.patent.application }}</a></p>
+  {% endif %}
+</div>

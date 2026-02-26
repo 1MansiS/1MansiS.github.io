@@ -1,0 +1,59 @@
+conference:
+  - year: "2022"
+    title: "Java Crypto: Don't Just Get it Working, Use it Securely"
+    events:
+      - label: "SecTor 2022"
+        url: "https://web.archive.org/web/20221201192406/https://sector.ca/sessions/java-crypto-dont-just-get-it-working-use-it-securely/"
+      - label: "JavaZone 2022"
+        url: "https://2022.javazone.no/#/program/591413dc-07bc-446e-8658-d01e82325dff"
+
+  - year: "2021"
+    title: "Cryptography Do's and Don'ts in 2021"
+    events:
+      - label: "NorthSec 2021 — Watch Recording ↗"
+        url: "https://youtu.be/_P6qI4ahBVk?t=948"
+
+  - year: "2020"
+    title: "How to Store Sensitive Information in 2020?"
+    events:
+      - label: "SecTor 2020"
+        url: "https://web.archive.org/web/20221003190325/https://sector.ca/sessions/how-to-store-sensitive-information-in-2020/"
+      - label: "CryptoVillage, DEF CON 2020 — Watch Recording ↗"
+        url: "https://www.youtube.com/watch?v=4Tn71-1GN20"
+
+  - year: "2020"
+    title: "Dos, Don'ts and How-Tos of Crypto Building Blocks Using Java"
+    events:
+      - label: "CryptoVillage, DEF CON 2020 — Watch Recording ↗"
+        url: "https://youtu.be/fvpWEzOOaRA?t=19082"
+
+  - year: "2018"
+    title: "How To Use Java Cryptography API Securely?"
+    events:
+      - label: "AppSec USA 2018 — Watch Recording ↗"
+        url: "https://www.youtube.com/watch?v=PxWnOu9uE1o"
+
+  - year: "2017"
+    title: "How To Use Java Cryptography API Securely?"
+    events:
+      - label: "JavaOne 2017 — Watch Recording ↗"
+        url: "https://www.youtube.com/watch?v=3HIdaSgxMlo"
+      - label: "JavaZone 2017"
+        url: "https://2017.javazone.no/program/c305c46014624f02b86a8864b54555b3"
+
+  - year: "2015"
+    title: "Building Security Analytics Solution Using Native XML Database"
+    events:
+      - label: "XML Prague 2015 — Watch Recording ↗"
+        url: "https://www.youtube.com/watch?v=-q8IpfSt-oc"
+      - label: "BaseX User Meeting 2015 — Watch Recording ↗"
+        url: "https://www.youtube.com/watch?v=scGKT3UTXxw"
+
+research:
+  - title: "Zero Day in Spring Framework"
+    label: "Panel Discussion on LinkedIn ↗"
+    url: "https://www.linkedin.com/posts/veracode_vulnerability-activity-6915359500388425728-k4bR"
+
+  - title: "Log4j 2.x Vulnerability"
+    label: "Panel Discussion on LinkedIn ↗"
+    url: "https://www.linkedin.com/posts/veracode_security-update-log4j2x-vulnerability-activity-6876196574700032000-VUD3"

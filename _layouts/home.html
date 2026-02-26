@@ -1,61 +1,47 @@
 ---
 layout: default
 ---
-
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }}
-
-
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
-
-
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-    <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
+<section class="home-hero">
+  <div class="hero-grid">
+    <div>
+      <p class="h-eye">{{ site.author.tagline }}</p>
+      <h1 class="h-name">Mansi<br><em>Sheth</em></h1>
+      <div class="h-bio">{{ content }}</div>
+      <div class="h-actions">
+        <a href="/assets/MansiSheth.pdf" class="btn btn-solid" target="_blank" rel="noopener">Resume ↗</a>
+        <a href="/contact/" class="btn btn-outline">Get in Touch</a>
       </div>
-    {%- endif %}
+    </div>
+    <div>
+      <div class="h-card">
+        <div class="stat-row">
+          <div><div class="s-num"><a href="/patents/">3</a></div><div class="s-lbl">Granted Patents</div></div>
+          <div><div class="s-num"><a href="/talks/">10+</a></div><div class="s-lbl">Conference Talks</div></div>
+          <div><div class="s-num"><a href="/blog/">9</a></div><div class="s-lbl">Blog Posts</div></div>
+          <div><div class="s-num"><a href="/ai/security-x-ai/">↗</a></div><div class="s-lbl">AI Security</div></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Applied Cryptography</span>
+          <span class="chip">Post-Quantum Crypto</span>
+          <span class="chip">Vuln Intelligence</span>
+          <span class="chip">AppSec · Static Analysis</span>
+          <span class="chip">AI × Security</span>
+        </div>
+        <a href="/projects/" class="see-all" style="margin-top:.85rem;display:block;">Open source projects →</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-  {%- endif -%}
-
-</div>
+<section class="home-body">
+  <p class="sec-eye">Latest Writing</p>
+  <div class="posts-grid">
+    {% for post in site.posts limit:6 %}
+    <a href="{{ post.url | relative_url }}" class="post-card">
+      <div class="pc-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+      <div class="pc-title">{{ post.title }}</div>
+    </a>
+    {% endfor %}
+  </div>
+  <a href="/blog/" class="see-all">All posts →</a>
+</section>

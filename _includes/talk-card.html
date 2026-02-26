@@ -1,0 +1,9 @@
+<div class="acard">
+  <div class="acard-eye">{{ include.talk.year | default: "Research" }}</div>
+  <h3>{{ include.talk.title }}</h3>
+  {% if include.talk.events %}
+  <ul>{% for ev in include.talk.events %}<li><a href="{{ ev.url }}" target="_blank" rel="noopener">{{ ev.label }}</a></li>{% endfor %}</ul>
+  {% elsif include.talk.url %}
+  <p><a href="{{ include.talk.url }}" target="_blank" rel="noopener">{{ include.talk.label }}</a></p>
+  {% endif %}
+</div>

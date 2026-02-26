@@ -1,0 +1,16 @@
+{% if include.featured %}
+<div class="proj-card proj-featured">
+  <div class="proj-hd">
+    <h3 class="proj-title">{% if include.project.github %}<a href="{{ include.project.github }}" target="_blank" rel="noopener">{{ include.project.title }}</a>{% else %}{{ include.project.title }}{% endif %}</h3>
+    <span class="status-pill {% if include.project.status == 'active' %}sp-active{% elsif include.project.status == 'coming-soon' %}sp-coming{% else %}sp-archived{% endif %}">{% if include.project.status == 'active' %}Active{% elsif include.project.status == 'coming-soon' %}Coming Soon{% else %}Archived{% endif %}</span>
+  </div>
+  {{ include.project.content }}
+  {% if include.project.tags %}<div class="proj-tags">{% for tag in include.project.tags %}<span class="chip">{{ tag }}</span>{% endfor %}</div>{% endif %}
+</div>
+{% else %}
+<div class="acard">
+  <div class="acard-eye">{{ include.project.category | default: "Project" }}</div>
+  <h3>{% if include.project.github %}<a href="{{ include.project.github }}" target="_blank" rel="noopener">{{ include.project.title }}</a>{% else %}{{ include.project.title }}{% endif %}</h3>
+  {{ include.project.content }}
+</div>
+{% endif %}

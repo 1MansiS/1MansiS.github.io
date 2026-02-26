@@ -1,16 +1,9 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
-
-# GitHub Pages meta-gem (includes supported Jekyll & plugins)
-gem "github-pages", group: :jekyll_plugins
-
-# Optional: explicit plugins you listed in _config.yml
+gem "jekyll", "~> 4.3"
 gem "jekyll-feed"
-gem "jekyll-seo-tag"
 
-# Minimal theme compatible with GitHub Pages
-gem "jekyll-theme-minimal", "~> 0.2.0"
-
-# Required for Jekyll 4+ on Ruby 2.6
-gem "webrick"
+# Windows/JRuby compat
+platforms :mingw, :x64_mingw, :mswin, :jruby do
+  gem "tzinfo", ">= 1", "< 3"
+  gem "tzinfo-data"
+end

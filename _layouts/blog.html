@@ -1,0 +1,12 @@
+---
+layout: page
+---
+{{ content }}
+<ul class="blog-list">
+{% for post in site.posts %}
+<li class="blog-row">
+  <span class="b-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <a href="{{ post.url | relative_url }}" class="b-link">{{ post.title }}</a>
+</li>
+{% endfor %}
+</ul>

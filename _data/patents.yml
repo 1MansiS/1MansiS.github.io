@@ -1,0 +1,24 @@
+granted:
+  - pill: "Granted · Mar 2019"
+    title: "Identifying Components for Static Analysis of Software Applications"
+    number: "US 10,229,273"
+    url: "https://patents.justia.com/patent/10229273"
+
+  - pill: "Granted · May 2017"
+    title: "System and Method for Facilitating Static Analysis of Software Applications"
+    number: "US 9,645,800"
+    url: "https://patents.justia.com/patent/9645800"
+
+  - pill: "Granted · Feb 2015"
+    title: "System and Method for Enhancing Static Analysis of Software Applications"
+    number: "US 9,405,906"
+    url: "http://patents.com/us-9405906.html"
+
+pending:
+  - title: "System and Method for Enhancing Static Analysis of Software Applications"
+    application: "20160246963"
+    url: "https://patents.justia.com/patent/20160246963"
+
+  - title: "System and Method for Facilitating Static Analysis of Software Applications"
+    application: "20160179486"
+    url: "https://patents.justia.com/patent/20160179486"

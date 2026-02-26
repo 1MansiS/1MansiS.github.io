@@ -1,41 +1,81 @@
 title: Mansi Sheth
+description: Security Researcher · AppSec · Static Security Analysis · Applied Cryptography · Post-Quantum Crypto · AI Security
+baseurl: ""
+url: "https://1mansis.github.io"
+
 author:
   name: Mansi Sheth
+  role: Security Researcher · AI
+  tagline: Security Researcher · AppSec · Applied Cryptography · AI
   email: mansi.sheth@gmail.com
-description: > # this means to ignore newlines until "show_excerpts:"
-  Everything about secure ways of using cryptography.
+  twitter: 1MansiS
+  github: 1MansiS
+  linkedin: shethmansi
 
-show_excerpts: false # set to true to show excerpts on the homepage
-
-# Minima date format
-# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
-minima:
-  skin: dark
-  date_format: "%b %-d, %Y"
-
-  # generate social links in footer
-  social_links:
-    twitter: 1MansiS
-    github:  1MansiS
-    linkedin: in/shethmansi
-    
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
-
-# Build settings
-theme: jekyll-theme-minimal
+# NO theme - fully custom
+# theme: (intentionally blank)
 
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
+  - jekyll-feed
 
-header_pages:
-  - /_pages/about.md
-  - /_pages/Repos.md
-  - /_pages/SpeakingEngagements.md
-  - /_pages/Patents.md
+# Tell Jekyll where pages live
+collections:
+  notes:
+    output: false
+  projects:
+    output: false
+  pages:
+    output: true
+    permalink: /:path/
 
-include:
-  - _pages
+defaults:
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: page
+  - scope:
+      path: "_pages/ai"
+      type: pages
+    values:
+      layout: ai-note
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+
+# Navigation — edit here to change the top bar
+nav:
+  - label: Talks
+    url: /talks/
+  - label: Patents
+    url: /patents/
+  - label: AI Notes
+    dropdown: true
+    children:
+      - label: "🧱  Foundations"
+        url: /ai/foundations/
+      - label: "🤖  LLM Systems"
+        url: /ai/llm-systems/
+      - label: "🔍  RAG & Retrieval"
+        url: /ai/rag-retrieval/
+      - label: "🔐  Security × AI"
+        url: /ai/security-x-ai/
+      - label: "📚  Reading Log"
+        url: /ai/reading-log/
+  - label: Blog
+    url: /blog/
+  - label: Resume
+    url: /assets/MansiSheth.pdf
+    new_tab: true
+  - label: Contact
+    url: /contact/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - README.md
+  - CLAUDE.md
+  - setup.sh

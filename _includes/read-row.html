@@ -1,0 +1,7 @@
+<div class="read-row">
+  <div>
+    <div class="read-title">{% if include.entry.url %}<a href="{{ include.entry.url }}" target="_blank" rel="noopener">{{ include.entry.title }}</a>{% else %}{{ include.entry.title }}{% endif %}</div>
+    <div class="read-author">{{ include.entry.author }}</div>
+  </div>
+  <span class="read-pill rp-{{ include.entry.status }}">{% assign sec = include.entry.section %}{% if include.entry.status == "done" %}{% if sec == "Videos" %}Watched{% elsif sec == "Podcasts" %}Listened{% elsif sec == "Courses" %}Finished{% else %}Read{% endif %}{% elsif include.entry.status == "reading" %}{% if sec == "Videos" %}Watching{% elsif sec == "Podcasts" %}Listening{% elsif sec == "Courses" %}In Progress{% else %}Reading{% endif %}{% else %}{% if sec == "Videos" %}To Watch{% elsif sec == "Podcasts" %}To Listen{% elsif sec == "Courses" %}To Start{% else %}To Read{% endif %}{% endif %}</span>
+</div>

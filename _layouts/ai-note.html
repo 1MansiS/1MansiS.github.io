@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="ai-subnav">
+  <a href="/ai/foundations/"   class="ai-sn{% if page.url contains 'foundations'   %} active{% endif %}">🧱 Foundations</a>
+  <a href="/ai/llm-systems/"   class="ai-sn{% if page.url contains 'llm-systems'   %} active{% endif %}">🤖 LLM Systems</a>
+  <a href="/ai/rag-retrieval/" class="ai-sn{% if page.url contains 'rag-retrieval'  %} active{% endif %}">🔍 RAG &amp; Retrieval</a>
+  <a href="/ai/security-x-ai/" class="ai-sn{% if page.url contains 'security-x-ai' %} active{% endif %}">🔐 Security × AI</a>
+  <a href="/ai/reading-log/"   class="ai-sn{% if page.url contains 'reading-log'   %} active{% endif %}">📚 Reading Log</a>
+</div>
+
+<div class="pg">
+  <div class="ai-banner b-{{ page.topic }}">
+    <div class="ai-icon">{{ page.icon }}</div>
+    <div class="ai-title">{{ page.title }}</div>
+    <div class="ai-sub">{{ page.subtitle }}</div>
+  </div>
+  {{ content }}
+</div>

@@ -1,0 +1,4 @@
+<div class="ai-section">
+  <div class="ai-section-hd">{{ include.group.name }}</div>
+  {% for entry in include.group.items %}{% include read-row.html entry=entry %}{% endfor %}
+</div>

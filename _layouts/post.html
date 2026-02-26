@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="pg">
+  <article>
+    <header class="post-hd">
+      <div class="post-meta">
+        <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+        {% for tag in page.tags %}
+        <span class="post-meta-dot">·</span>
+        <span class="post-tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      <h1 class="post-title">{{ page.title }}</h1>
+    </header>
+    <div class="prose post-body">{{ content }}</div>
+    <footer class="post-ft">
+      <a href="{{ '/blog/' | relative_url }}" class="back-link">← All posts</a>
+    </footer>
+  </article>
+</div>
