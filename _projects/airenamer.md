@@ -1,5 +1,5 @@
 ---
-title: "AIRenamer"
+title: "AIRename"
 github: "https://github.com/1MansiS/AIRename"
 tags: [AI, Neovim, OSS]
 featured: true
