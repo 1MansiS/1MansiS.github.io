@@ -2,12 +2,12 @@
 topic: foundations
 section: "Machine Learning"
 tag: "Course Notes"
-title: "Machine Learning — Foundations"
+title: "Machine Learning"
 source: "https://www.coursera.org/learn/machine-learning"
 speaker: "Andrew Ng"
 ---
 
-# Machine Learning — Foundations
+# Machine Learning
 **Course:** Stanford / Coursera — Andrew Ng
 **Week:** 1–2 | **Started:** July 1, 2019
 
