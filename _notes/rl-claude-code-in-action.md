@@ -6,5 +6,5 @@ author: "Anthropic"
 link: "https://anthropic.skilljar.com/claude-code-in-action/303241"
 status: reading
 date: 2026-02-24
-notes_url: /ai/llm-systems/
+notes_url: /ai/llm-systems/#what-is-a-coding-assistant-anthropic-claude-code-in-action
 ---

@@ -6,5 +6,5 @@ author: "Andrew Ng"
 link: "https://www.youtube.com/watch?v=KrRD7r7y7NY&t=18s"
 status: done
 date: 2025-02-17
-notes_url: /ai/llm-systems/
+notes_url: /ai/llm-systems/#andrew-ng-the-rise-of-ai-agents-and-agentic-reasoning
 ---

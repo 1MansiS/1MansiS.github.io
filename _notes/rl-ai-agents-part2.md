@@ -6,5 +6,5 @@ author: ""
 link: "https://www.youtube.com/watch?v=bZzyPscbtI8"
 status: done
 date: 2025-03-05
-notes_url: /ai/llm-systems/
+notes_url: /ai/llm-systems/#ai-agents-learnings
 ---

@@ -1,4 +1,4 @@
-<div class="note n-{{ include.note.topic }}{% if include.note.wip %} note-wip{% endif %}">
+<div class="note n-{{ include.note.topic }}{% if include.note.wip %} note-wip{% endif %}" id="{{ include.note.title | slugify }}">
   {% if include.note.tag %}<div class="note-meta"><span class="n-tag t-{{ include.note.topic }}">{{ include.note.tag }}</span></div>{% endif %}
   <h3>{{ include.note.title }}</h3>
   {{ include.note.content }}

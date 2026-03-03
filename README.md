@@ -100,7 +100,7 @@ Leave the body empty if there are no notes for this entry.
 | `author` | ✅ | Author, publisher, or podcast name |
 | `status` | ✅ | `done` / `reading` / `queue` |
 | `link` | optional | External URL — makes the title a clickable link |
-| `notes_url` | optional | Path to a detailed note on another AI page (e.g. `/ai/secai/`) — renders as `See notes →` |
+| `notes_url` | optional | Path to a detailed note on another AI page — renders as `See notes →`. Include an anchor to jump directly to the note card: e.g. `/ai/foundations/#machine-learning`. The anchor is the note's `title:` run through Jekyll's `slugify` filter (lowercase, non-alphanumerics → `-`). |
 
 **Status pill values:**
 
